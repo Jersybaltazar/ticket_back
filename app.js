@@ -9,7 +9,7 @@ const permissionRoutes = require('./routes/permissionRoutes');
 const ticketRoutes = require('./routes/ticketRoute');
 // Middlewares
 app.use(cors({
-  origin:['http://localhost:3000'],
+  origin:['https://ticket-front-1.onrender.com'],
   credentials:true,
 }));
 app.use(bodyParser.json({limit:'10mb'}));
