@@ -25,7 +25,7 @@ exports.createTicketWithQR = async (req, res) => {
     const newTicket = await Ticket.create({
       event_name,
       date,
-      time,
+      time: new Date(time).toISOString().substr(11, 8),
       attendee_name,
       seat,
       price,
