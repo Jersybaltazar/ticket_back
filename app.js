@@ -9,7 +9,7 @@ const permissionRoutes = require('./routes/permissionRoutes');
 const ticketRoutes = require('./routes/ticketRoute');
 // Middlewares
 app.use(cors({
-  origin:['https://ticket-front-1.onrender.com'],
+  origin:['https://ticket-front-sand.vercel.app'],
   credentials:true,
 }));
 app.use(bodyParser.json({limit:'10mb'}));
